@@ -1,0 +1,61 @@
+
+
+\begin{frame}{Query Usage Patterns}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[height = .80\textheight]{figures/communityForming}
+            \end{figure}    
+        \end{column}%
+        \hfill%
+        \begin{column}{.48\textwidth}
+            \begin{itemize}
+                \item LTQP is a client-side querying approach
+                \item Clients likely exhibit patterns in query engine usage
+            \end{itemize}
+        \end{column}%
+    \end{columns}
+
+    
+  \note{
+    Here introduce the following:
+    \begin{itemize}
+        \item LTQP is a client-side query approach where single engine instance services one client
+        \item As with browsers and other query engines, clients exhibit patterns in what queries are issued
+        \item For example, some clients might primarily query a subset of all data vaults in the ecosystem,
+        thus reducing the relevant data to query.
+    \end{itemize}
+  }
+\end{frame}
+
+\begin{frame}{Query Usage Patterns}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[height = .80\textheight]{figures/interiorOfDataVault}
+            \end{figure}    
+        \end{column}%
+        \hfill%
+        \begin{column}{.48\textwidth}
+            \begin{itemize}
+                \item Clients are more likely to query subsets of data vault depending on their usage patterns
+            \end{itemize}
+        \end{column}%
+    \end{columns}
+    \note{
+        Here introduce the following:
+        \begin{itemize}
+            \item Some users might be primarily interested in only parts of the queried datavaults. For example, a user might frequently
+            issue queries on topic A, thus making documents relating to topic B more likely to be irrelevant.
+        \end{itemize}
+      }
+\end{frame}
+
+% Slide with sub communities visible in the data vaults
+
+
+% Slide explaining interests within vaults, thus rendering some parts useless while others get queried ManySourceHowToFindNoText
+
+% Conclusion: Correlation

@@ -1,0 +1,64 @@
+\begin{frame}{Modeling Query Usage Patterns}
+    \begin{itemize}
+        \item Extend decentralized benchmark SolidBench 
+        \item Identify and simulate client-specific query usage patterns
+    \end{itemize}
+    \note{
+        \begin{itemize}
+            \item SolidBench is a decentralized social media benchmark.
+            \item Our modeling of query usage patterns will include a literature review on sub-community formation
+            in social networks.
+            \item And include analysis of real-life query logs to identify user types.
+            \item Use this theoretical framework to extend SolidBench.
+        \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}{Modeling Query Usage Patterns}
+    \begin{figure}
+        \centering
+        \includegraphics[width = \textwidth]{figures/identify-query-patterns}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Caching for LTQP}
+    \begin{figure}
+        \centering
+        \includegraphics[width = \textwidth]{figures/caching-levels}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Possible Cache Content}
+    \begin{itemize}
+        \item Dataset summaries
+        \item Characteristic sets 
+        \item Approximate Membership Functions 
+        \item Indexes
+    \end{itemize}
+\end{frame}
+    
+\begin{frame}{Learned Query Optimization}
+    \begin{itemize}
+        \item Trained online
+        \item Sample Efficiency
+        \item Learned Query Hints
+    \end{itemize}
+        \note{
+            \begin{itemize}
+                \item As we don't know what data the user will query beforehand (this is different depending on the query), we must train the model online 
+                \item This requires either using adaptive query processing with a learned optimizer recording information in the background or fully online training
+                \item Both cases require high sample efficiency to offset the training cost 
+                \item Learning query hints instead of full query optimization is shown to be significantly more sample efficient for relational databases.
+            \end{itemize}
+        }
+\end{frame}
+    
+    
+\begin{frame}{Learned Query Optimization}
+    \begin{figure}
+        \centering
+        \includegraphics[width = \textwidth]{figures/LearnedQueryHints}
+    \end{figure}
+\end{frame}

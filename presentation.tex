@@ -6,6 +6,9 @@
 \usepackage{fancyvrb}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{svg}
+\usepackage{xcolor}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
 
 \ifnotes
 \setbeamertemplate{note page}[plain]
@@ -19,13 +22,14 @@
 \definecolor{red}{RGB}{181, 23, 0}
 \definecolor{blue}{RGB}{0, 118, 186}
 \definecolor{gray}{RGB}{146, 146, 146}
+\addbibresource{references/bib.bib}
 
-\title{Fancy Title: Followed by Some More Text}
 
-\author{\underline{Alyssa P. Hacker} \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
+\title{Personalized Query Engine Optimization for Link Traversal-based Query Processing over Structured Decentralized Environments}
 
-\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+\author{\underline{Ruben Eschauzier} \inst{1}}
 
+\institute[shortinst]{ Ghent University - Imec }
 \begin{document}
 
 {
@@ -37,12 +41,20 @@
   \end{frame}
 }
 
-\input{slides/bullets}
-\input{slides/split}
-\input{slides/figure}
-\input{slides/centered}
-\input{slides/monospace}
-\input{slides/brackets}
-\input{slides/link}
+\input{slides/introduction}
+% \input{slides/introductionPersonalizedQueryOptimization}
+\input{slides/research-questions}
+\input{slides/related-work}
+\input{slides/optimizing-LTQP}
+\input{slides/method}
+\input{slides/conclusion}
+\input{slides/references}
+
+% \input{slides/split}
+% \input{slides/figure}
+% \input{slides/centered}
+% \input{slides/monospace}
+% \input{slides/brackets}
+% \input{slides/link}
 
 \end{document}
