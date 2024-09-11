@@ -1,0 +1,90 @@
+\begin{frame}{The $ R^{3} $ Metric}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+
+       \begin{figure}
+            \centering
+            \includegraphics[height = .7\textheight]{figures/traversal_start}
+        \end{figure}
+
+        \end{column}%
+        \hfill%
+        \begin{column}{.48\textwidth}
+            \bigskip
+            \begin{itemize}
+                \item The queried subweb and query-relevant documents determine algorithmic performance
+            \end{itemize}
+        \end{column}%
+    \end{columns}
+\end{frame}
+
+\begin{frame}{The $ R^{3} $ Metric - BFS vs DFS}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+
+       \begin{figure}
+            \centering
+            \includegraphics[height = .7\textheight]{figures/traversal_breadth_first}
+        \end{figure}
+
+        \end{column}%
+        \hfill%
+        \begin{column}{.48\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[height = .7\textheight]{figures/traversal_depth_first}
+            \end{figure}    
+        \end{column}%
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}{The $ R^{3} $ Metric}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+
+       \begin{figure}
+            \centering
+            \includegraphics[height = .7\textheight]{figures/traversal_optimal}
+        \end{figure}
+
+        \end{column}%
+        \hfill%
+        \begin{column}{.48\textwidth}
+            \bigskip
+            \begin{itemize}
+                \item Breadth-first dereferences 10 links
+                \item Depth-first dereferences 7
+                \item Optimal traversal requires only 3
+            \end{itemize}
+        \end{column}%
+    \end{columns}
+\end{frame}
+
+\begin{frame}{The $ R^{3} $ Metric}
+    \begin{columns}[T] % align columns
+        \begin{column}{.48\textwidth}
+            \bigskip
+            \bigskip
+            \bigskip
+            \begin{aligned}
+                R^{3} = \dfrac{|T_{O}|}{|T_{E}|}, \quad \quad |T_{O}|, \: |T_{E}| > 0
+            \end{aligned}               
+        \end{column}%
+        \hfill%
+        \begin{column}{.48\textwidth}
+            \begin{itemize}
+                \item $|T_{O}|$ the length of the optimal path
+                \item $|T_{E}|$ the length of the taken path
+                \item Higher is better
+            \end{itemize}
+        \end{column}%
+    \end{columns}
+\end{frame}
+
+\begin{frame}{The $ R^{3} $ Metric}
+    \begin{itemize}
+        \item BFS: $ 10 / 3 = 3.33 $
+        \item DFS: $ 7 / 3 = 2.33 $
+    \end{itemize}
+\end{frame}
