@@ -39,7 +39,7 @@
 \end{frame}
 
 
-\begin{frame}{The $ R^{3} $ Metric}
+\begin{frame}{The $ R^{3} $ Metric - Optimal}
     \begin{columns}[T] % align columns
         \begin{column}{.48\textwidth}
 
@@ -53,9 +53,9 @@
         \begin{column}{.48\textwidth}
             \bigskip
             \begin{itemize}
-                \item Breadth-first dereferences 10 links
-                \item Depth-first dereferences 7
-                \item Optimal traversal requires only 3
+                \item The Traversal graph is a directed graph
+                \item Equivalent to a Steiner tree problem
+                \item Reuse existing optimizers for this problem
             \end{itemize}
         \end{column}%
     \end{columns}
@@ -84,7 +84,8 @@
 
 \begin{frame}{The $ R^{3} $ Metric}
     \begin{itemize}
-        \item BFS: $ 10 / 3 = 3.33 $
-        \item DFS: $ 7 / 3 = 2.33 $
+        \item BFS traverses $ 10 $ links, DFS $ 7 $, and optimal $ 3 $  
+        \item BFS: $R^{3} = 10 / 3 = 3.33 $
+        \item DFS: $R^{3} = 7 / 3 = 2.33 $
     \end{itemize}
 \end{frame}

@@ -6,6 +6,9 @@
 \usepackage{fancyvrb}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage[style=numeric ,backend=bibtex]{biblatex}
+\addbibresource{slides/references.bib}
 
 \ifnotes
 \setbeamertemplate{note page}[plain]
@@ -38,11 +41,13 @@
 }
 
 \input{slides/introduction}
+\input{slides/introduction_link_traversal}
 \input{slides/problem_statement}
 \input{slides/method}
 \input{slides/experiments}
 \input{slides/results}
 \input{slides/conclusion}
+\input{slides/references}
 
 
 \end{document}
