@@ -1,3 +1,17 @@
+\begin{frame}{Desiderata of a retrieval order metric}
+    \begin{itemize}
+        \item Measures only retrieval performance
+        \item Should indicate how far from optimal the current approach is
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{The $ R^{3} $ Metric}
+    \begin{itemize}
+        \item Introducing: Relevant Retrieval Ratio ($ R^{3} $)
+        \item Measures the ratio of relevant dereference events compared to the optimal dereference order
+    \end{itemize}
+\end{frame}
+
 \begin{frame}{The $ R^{3} $ Metric}
     \begin{columns}[T] % align columns
         \begin{column}{.48\textwidth}
@@ -85,7 +99,7 @@
 \begin{frame}{The $ R^{3} $ Metric}
     \begin{itemize}
         \item BFS traverses $ 10 $ links, DFS $ 7 $, and optimal $ 3 $  
-        \item BFS: $R^{3} = 10 / 3 = 3.33 $
-        \item DFS: $R^{3} = 7 / 3 = 2.33 $
+        \item BFS: $R^{3} = 3 / 10 = 0.30 $
+        \item DFS: $R^{3} = 3 / 7 = 0.43 $
     \end{itemize}
 \end{frame}
